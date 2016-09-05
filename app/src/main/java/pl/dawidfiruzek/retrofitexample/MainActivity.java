@@ -30,4 +30,9 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
         presenter.onResumed();
     }
+
+    @Override
+    public void showRepos(String repos) {
+        repositories.setText(repos);
+    }
 }
